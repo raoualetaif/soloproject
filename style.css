@@ -1,0 +1,67 @@
+body{
+background: ;
+}
+h1{
+
+}
+img{
+  width: 200px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.table{
+ display: flex;
+ flex-wrap: wrap;
+ width: 1030px;
+ margin: 0 auto;
+}
+#cover{
+  position: relative;
+  /*left: 0px;
+  top: 0px;
+*/  display: flex;
+ flex-wrap: wrap;
+ width: 1030px;
+ margin: 0 auto;
+   z-index: 2;
+
+
+}
+#container{
+width:600px ;
+height:600px ;
+display: flex;
+flex-wrap: wrap;
+left: 22%;
+  top: 0px;
+}
+.co{
+width: 202px;
+height: 230px;
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.card1{
+position: relative;
+  width: 25%;
+  height: 30%;
+  margin : auto;
+  /*text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+
+}
+.card1:hover.card1{
+  transform: rotateY(180deg);
+}
+  .flip-back{
+  transform: rotateY(180deg);
+}
+  
+ 
