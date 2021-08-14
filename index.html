@@ -5,65 +5,115 @@
 	<title>MEMORY GAME</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
 	<h1>MEMORY GAME</h1>
-
-
+<input id="b" type="button" value="Play again" onclick="location.reload();"> 
+	<br>
+	<div id="count"> Matching Counting Clicks:</div>
 
 <div id="container">
 
-  <div class="card1"> 
+<div class="card" id="c1" > 
    		<div class="flip-back">
-	 <img src="strawberry.jpg">
-		
-			<div class="flip-front">
-	 <img class="co" src="cover.jpg">
+		 <img class = "p"src="strawberry.jpg">
 		</div>
-	 <div class="card1">
-	 <img src="sun.jpg">
-	 <img class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	 <img src="cat.jpg">
-	 <img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	 <img src="dog.jpg">
-	 <img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	<img src="cat.jpg">
-	<img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	 <img src="avocado.jpg">
-	 <img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	 <img src="flower.jpg">
-	 <img  class="co" src="cover.jpg">
-	</div >
-	<div class="card1">
-	  <img src="strawberry.jpg">
-	   <img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1">
-	 <img src="sun.jpg"> 
-	 <img  class="co" src="cover.jpg">
-	</div>
-	<div class="card1"><img src="dog.jpg"> 
-	<img  class="co" src="cover.jpg"> 
-	</div>
-	 <div class="card1"><img src="flower.jpg">
-	 	<img  class="co" src="cover.jpg">
+			<div class="flip-front" >
+	 	<img class="co" id="0" src="cover.jpg">
+		</div>
+</div>
+
+<div class="card" id="c2">
+	 		<div class="flip-back">
+	 	<img class = "p" id="sun" src="sun.jpg">
 	 </div>
-	 <div class="card1">
- 	<img src="avocado.jpg">
- 	<img  class="co" src="cover.jpg"></div>
+	 <div class="flip-front">
+		 <img class="co" id="1" src="cover.jpg">
+		</div>
+</div>
+<div class="card" id="c3">
+			<div class="flip-back">
+		 <img class = "p" src="cat.jpg">
+		</div>
+		<div class="flip-front">
+		 <img  class="co" id="2" src="cover.jpg">
+		</div>
+</div>		
+<div class="card" id="c4">
+			<div class="flip-back">
+		 <img class = "p" src="dog.jpg">
+		</div>
+		<div class="flip-front">
+	 	<img  class="co" id="3" src="cover.jpg">
+		</div>
+</div>
+		<div class="card" id="c5">
+		<div class="flip-back">	
+		<img class = "p" src="cat.jpg"> 
+		</div>
+		<div class="flip-front">
+		<img  class="co" id="4" src="cover.jpg">
+		</div>
+</div>
+		<div class="card" id="c6">
+		<div class="flip-back">
+		 <img class = "p" src="avocado.jpg">
+		</div>
+		<div class="flip-front">
+		 <img  class="co" id="5" src="cover.jpg">
+		</div>
+</div>
+		<div class="card" id="c7">
+			<div class="flip-back">
+		 <img class = "p" src="flower.jpg">
+		</div>
+		<div class="flip-front">
+		 <img  class="co" id="6" src="cover.jpg">
+		</div >
+</div>
+		<div class="card" id="c8">
+			<div class="flip-back">
+	  <img class = "p" src="strawberry.jpg">
+		</div>
+		<div class="flip-front">
+	   <img  class="co" id="7" src="cover.jpg">
+		</div>
+</div>
+		<div class="card" id="c9">
+		<div class="flip-back">
+		 <img class = "p" src="sun.jpg"> 
+		</div>
+		<div class="flip-front">
+	 	<img  class="co" id="8" src="cover.jpg">
+		</div>
+</div>
+		<div class="card" id="c10">
+			<div class="flip-back">
+			<img class = "p" src="dog.jpg"> 
+		</div>
+		<div class="flip-front">
+		<img  class="co" id="9" src="cover.jpg"> 
+		</div>
+</div>
+		 <div class="card" id="c11">
+		 	<div class="flip-back">
+		 	<img class = "p" src="flower.jpg">
+		 </div>
+		 <div class="flip-front">
+	 		<img  class="co" id="10" src="cover.jpg">
+	 	</div>
+</div>		
+		 <div class="card" id="c12">
+		 	<div class="flip-back">
+ 		<img class = "p"  src="avocado.jpg">
+ 	</div>
+ 	<div class="flip-front">
+ 		<img  class="co" id="11" src="cover.jpg"></div>
 	</div>
 </div>
+</div>
+
+	<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

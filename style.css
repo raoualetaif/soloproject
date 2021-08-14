@@ -1,15 +1,49 @@
 body{
-background: ;
+margin: -8px auto ;
+background-color: #ffdde1;//pink
 }
 h1{
+font-family: fantasy;
+font-size: 80px;
+text-align: center;
+margin:  auto;
+}
+#b{
+background-color: lightpink;
+  margin: inherit;
+    border-radius: 10px;
+  color: black;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid black;
 
+ }
+ #b:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 img{
-  width: 200px;
-  border: 2px solid black;
-  padding: 20px;
-  margin: 5px;
+  width: 100%;
+  border: 1px solid black;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
 .table{
  display: flex;
@@ -17,11 +51,11 @@ img{
  width: 1030px;
  margin: 0 auto;
 }
-#cover{
+.cover{
   position: relative;
-  /*left: 0px;
+  left: 0px;
   top: 0px;
-*/  display: flex;
+  display: flex;
  flex-wrap: wrap;
  width: 1030px;
  margin: 0 auto;
@@ -30,6 +64,7 @@ img{
 
 }
 #container{
+  margin: auto;
 width:600px ;
 height:600px ;
 display: flex;
@@ -38,30 +73,41 @@ left: 22%;
   top: 0px;
 }
 .co{
-width: 202px;
-height: 230px;
-  border: 5px solid black;
+width: 100%;
+height: 100%;
+  /*border: 5px solid black;*/
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
-  z-index: 2;
+  /*box-sizing: border-box;*/
+  /*z-index: 2;*/
 }
-.card1{
+.card{
+    float: left;
+    border-radius: 2cm;
 position: relative;
-  width: 25%;
-  height: 30%;
-  margin : auto;
-  /*text-align: center;
+  width: 33%;
+  height: 34%;
+  margin : 0 auto;
+  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
-
+  
 }
-.card1:hover.card1{
+
+
+.card:hover.card{
   transform: rotateY(180deg);
+  cursor: pointer;
 }
   .flip-back{
+    position: absolute;
   transform: rotateY(180deg);
 }
+.flip-front{
+position: absolute;
+}
   
- 
+#count{
+font-family: cursive;
+margin-left: 1%;
+}
